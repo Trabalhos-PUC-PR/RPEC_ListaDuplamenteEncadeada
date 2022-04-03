@@ -5,7 +5,7 @@ package entity;
  */
 public class List {
 
-	Element element;
+	Private Element element;
 	
 	public List() {
 		element = null;
@@ -16,10 +16,7 @@ public class List {
 	 * @return True if first element is null, false if not
 	 */
 	public boolean isEmpty() {
-		if(element == null) {
-			return true;
-		}
-		return false;
+		return (element == null);
 	}
 	
 	/**
@@ -123,7 +120,6 @@ public class List {
 			aux = aux.getForwardElement();
 		}
 		aux.getBackwardElement().setForwardElement(null);
-		return;
 	}
 
 	/**
