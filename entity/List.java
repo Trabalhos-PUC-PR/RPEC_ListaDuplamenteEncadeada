@@ -5,7 +5,7 @@ package entity;
  */
 public class List {
 
-	Private Element element;
+	private Element element;
 	
 	public List() {
 		element = null;
