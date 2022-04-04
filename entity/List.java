@@ -59,12 +59,11 @@ public class List {
 		if(isEmpty()) {
 			element = new Element(data);
 			return;
-		} else {
-			Element aux = new Element(data);
-			element.setBackwardElement(aux);
-			aux.setForwardElement(element);
-			element = aux;
 		}
+		Element aux = new Element(data);
+		element.setBackwardElement(aux);
+		aux.setForwardElement(element);
+		element = aux;
 	}
 	
 	/**
